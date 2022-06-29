@@ -10,11 +10,7 @@
       html,
       body {
         height: 100%;
-      }
-
-      body {
-        display: grid;
-        place-items: center;
+        overflow: hidden;
       }
 
       .tamagotchi {
@@ -22,7 +18,11 @@
         aspect-ratio: 0.9;
         border-radius: 60% 60% 57% 57% / 70% 70% 50% 50%;
         background: #c8b6e0;
-        position: relative;
+        position: absolute;
+        left: 57%;
+        top: 50%;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
         box-shadow: 2px 2px 17px rgba(0, 0, 0, 0.6),
           2px 2px 20px rgba(0, 0, 0, 0.3) inset,
           0px 0px 5px 5px rgba(255, 255, 255, 0.9) inset,
